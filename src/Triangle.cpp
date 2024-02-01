@@ -1,26 +1,28 @@
 #include "../headers/Triangle.h"
 using namespace std;
 
-Triangle::Triangle() : areaTri(0.0f), perimeterTri(0){}
+Triangle::Triangle() : mAreaTri(0.0f), mPerimeterTri(0){}
 
-void Triangle::dimTri(double s1, double s2, double s3, double ht)
+Triangle::~Triangle() {}
+
+void Triangle::dimensionTriangle(double s1, double s2, double s3, double ht)
 {
     // Assign length & breadth
-    this->sideOneTri = s1;
-    this->sideTwoTri = s2;
-    this->baseTri = s3;
-    this->heightTri = ht;
+    this->mSideOneTri = s1;
+    this->mSideTwoTri = s2;
+    this->mBaseTri = s3;
+    this->mHeightTri = ht;
 
-    areaTri = (float)((0.5) * baseTri * heightTri);
-    perimeterTri = sideOneTri + sideTwoTri + baseTri;
+    mAreaTri = (float)((0.5) * mBaseTri * mHeightTri);
+    mPerimeterTri = mSideOneTri + mSideTwoTri + mBaseTri;
 }
 
- double Triangle::areaOfTri()
+ double Triangle::areaOfTriangle()
  {
-    return areaTri;
+    return mAreaTri;
  }
 
-double Triangle::perimeterOfTri()
+double Triangle::perimeterOfTriangle()
 {
-    return perimeterTri;
+    return mPerimeterTri;
 }

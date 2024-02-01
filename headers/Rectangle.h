@@ -3,12 +3,14 @@
 
 class Rectangle
 {
-    int lengthRec, breadthRec, areaRec, perimeterRec;
-    
     public:
-        Rectangle();
-        void dimRec(int len, int wid);
-        int areaOfRec();
-        int perimeterOfRec();
+        Rectangle(); // Constructor
+        ~Rectangle(); // Destructor
+        void dimensionOfRectangle(int len, int wid);
+        int areaOfRectangle();
+        int perimeterOfRectangle();
+
+    private:
+        int mLengthRec, mBreadthRec, mAreaRec, mPerimeterRec;
 };
 

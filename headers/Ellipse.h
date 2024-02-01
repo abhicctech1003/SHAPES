@@ -3,13 +3,15 @@
 
 class Ellipse
 {
-    float majorAxisEll, minorAxisEll, areaEll, circumferenceEll;
-    
     public:
-        Ellipse();
-        void dimEll(float majorAx, float minorAX);
-        float areaOfEll();
-        float circumferenceOfEll();
+        Ellipse(); // Constructor
+        ~Ellipse(); // Destructor
+        void dimensionEllipse(float majorAx, float minorAX);
+        float areaOfEllipse();
+        float circumferenceOfEllipse();
+
+    private:
+        float mMajorAxisEll, mMinorAxisEll, mAreaEll, mCircumferenceEll;
 };
 
 

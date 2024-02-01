@@ -1,24 +1,26 @@
 #include "../headers/Rectangle.h"
 using namespace std;
 
-Rectangle::Rectangle() : areaRec(0), perimeterRec(0){}
+Rectangle::Rectangle() : mAreaRec(0), mPerimeterRec(0){}
 
-void Rectangle::dimRec(int len, int wid)
+Rectangle::~Rectangle() {}
+
+void Rectangle::dimensionOfRectangle(int len, int wid)
 {
     // Assign length & breadth
-    this->lengthRec = len;
-    this->breadthRec = wid;
+    this->mLengthRec = len;
+    this->mBreadthRec = wid;
 
-    areaRec = lengthRec * breadthRec;
-    perimeterRec = 2 * (lengthRec + breadthRec);
+    mAreaRec = mLengthRec * mBreadthRec;
+    mPerimeterRec = 2 * (mLengthRec + mBreadthRec);
 }
 
- int Rectangle::areaOfRec()
+ int Rectangle::areaOfRectangle()
  {
-    return areaRec;
+    return mAreaRec;
  }
 
-int Rectangle::perimeterOfRec()
+int Rectangle::perimeterOfRectangle()
 {
-    return perimeterRec;
+    return mPerimeterRec;
 }

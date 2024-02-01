@@ -5,7 +5,6 @@
 #include "./headers/Rectangle.h"
 #include "./headers/Circle.h"
 #include "./headers/Ellipse.h"
-
 using namespace std;
 
 int main()
@@ -39,8 +38,8 @@ int main()
             // Local variables for Line
             int lPoint1x, lPoint1y, lPoint2x, lPoint2y;
             cin >> lPoint1x >> lPoint2y >> lPoint2x >> lPoint2y;
-            objLine.dimLine(lPoint1x, lPoint1y, lPoint2x, lPoint2y);
-            cout << "Length of Line is " << objLine.lineLen() << endl;
+            objLine.dimensionLine(lPoint1x, lPoint1y, lPoint2x, lPoint2y);
+            cout << "Length of Line is " << objLine.lineLength() << endl;
 
             break;
             }
@@ -57,10 +56,10 @@ int main()
             int lSide1, lSide2, lBase, lHeight;
             cin >> lSide1 >> lSide2 >> lBase >> lHeight;
 
-            objTriangle.dimTri(lSide1,lSide2,lBase,lHeight);
+            objTriangle.dimensionTriangle(lSide1,lSide2,lBase,lHeight);
 
-            cout << "Area of Triangle is " << objTriangle.areaOfTri() << endl;
-            cout << "Perimeter of Triangle is " << objTriangle.perimeterOfTri() << endl;
+            cout << "Area of Triangle is " << objTriangle.areaOfTriangle() << endl;
+            cout << "Perimeter of Triangle is " << objTriangle.perimeterOfTriangle() << endl;
 
             break;
             }
@@ -77,7 +76,7 @@ int main()
             int lSide;
             cin >> lSide;
 
-            objSquare.dimSquare(lSide);
+            objSquare.dimensionOfSquare(lSide);
 
             cout << "Area of Square is " << objSquare.areaOfSquare() << endl;
             cout << "Perimeter of Square is " << objSquare.perimeterOfSquare() << endl;
@@ -97,10 +96,10 @@ int main()
             int lRectLength, lRectBredth;
             cin >> lRectLength >> lRectBredth;
 
-            objRectangle.dimRec(lRectLength, lRectBredth);
+            objRectangle.dimensionOfRectangle(lRectLength, lRectBredth);
 
-            cout << "Area of Rectangle is " << objRectangle.areaOfRec() << endl;
-            cout << "Perimeter of Rectangle is " << objRectangle.perimeterOfRec() << endl;
+            cout << "Area of Rectangle is " << objRectangle.areaOfRectangle() << endl;
+            cout << "Perimeter of Rectangle is " << objRectangle.perimeterOfRectangle() << endl;
 
             break;
             }
@@ -117,10 +116,10 @@ int main()
             float lRadius;
             cin >> lRadius;
 
-            objCircle.dimCir(lRadius);
+            objCircle.dimensionCircle(lRadius);
 
-            cout << "Area of Circle is " << objCircle.areaOfCir() << endl;
-            cout << "Circumference of Circle is " << objCircle.circumferenceOfCir() << endl;
+            cout << "Area of Circle is " << objCircle.areaOfCircle() << endl;
+            cout << "Circumference of Circle is " << objCircle.circumferenceOfCircle() << endl;
 
             break;
             }
@@ -137,10 +136,10 @@ int main()
             float lMajorAx, lMinorAx;
             cin >> lMajorAx >> lMinorAx;
 
-            objEllipse.dimEll(lMajorAx, lMinorAx);
+            objEllipse.dimensionEllipse(lMajorAx, lMinorAx);
 
-            cout << "Area of Ellipse is " << objEllipse.areaOfEll() << endl;
-            cout << "Circumference of Ellipse is " << objEllipse.circumferenceOfEll() << endl;
+            cout << "Area of Ellipse is " << objEllipse.areaOfEllipse() << endl;
+            cout << "Circumference of Ellipse is " << objEllipse.circumferenceOfEllipse() << endl;
 
             break;
             }

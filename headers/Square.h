@@ -1,15 +1,16 @@
-
 #include <iostream>
 
 class Square
 {
-    int sideSquare, areaSquare, perimeterSquare;
-    
     public:
-        Square();
-        void dimSquare(int side);
+        Square(); // Constructor
+        ~Square(); // Destructor
+        void dimensionOfSquare(int side);
         int areaOfSquare();
         int perimeterOfSquare();
+
+    private:
+        int mSideSquare, mAreaSquare, mPerimeterSquare;
 };
 
 

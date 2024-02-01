@@ -2,24 +2,29 @@
 #include "../headers/Ellipse.h"
 using namespace std;
 
-Ellipse::Ellipse() : areaEll(0), circumferenceEll(0){}
+Ellipse::Ellipse() : mAreaEll(0), mCircumferenceEll(0){}
 
-void Ellipse::dimEll(float majorAx, float minorAX)
+Ellipse::~Ellipse()
 {
-    // Assign length & breadth
-    this->majorAxisEll = majorAx;
-    this->minorAxisEll = minorAX;
-
-    areaEll = M_PI * majorAxisEll * minorAxisEll;
-    circumferenceEll = M_PI * (3 * (majorAxisEll + minorAxisEll) - sqrt((3 * majorAxisEll + minorAxisEll) * (majorAxisEll + 3 * minorAxisEll)));
 
 }
-float Ellipse::areaOfEll()
+
+void Ellipse::dimensionEllipse(float majorAx, float minorAX)
+{
+    // Assign length & breadth
+    this->mMajorAxisEll = majorAx;
+    this->mMinorAxisEll = minorAX;
+
+    mAreaEll = M_PI * mMajorAxisEll * mMinorAxisEll;
+    mCircumferenceEll = M_PI * (3 * (mMajorAxisEll + mMinorAxisEll) - sqrt((3 * mMajorAxisEll + mMinorAxisEll) * (mMajorAxisEll + 3 * mMinorAxisEll)));
+
+}
+float Ellipse::areaOfEllipse()
  {
-    return areaEll;
+    return mAreaEll;
  }
 
-float Ellipse::circumferenceOfEll()
+float Ellipse::circumferenceOfEllipse()
 {
-    return circumferenceEll;
+    return mCircumferenceEll;
 }

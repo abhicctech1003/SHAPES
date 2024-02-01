@@ -1,14 +1,15 @@
-
 #include <iostream>
 
 class Circle
 {
-    float radiusCir, areaCir, circumferenceCir;
-    
     public:
         Circle();
-        void dimCir(float rad);
-        float areaOfCir();
-        float circumferenceOfCir();
+        ~Circle();
+        void dimensionCircle(float rad);
+        float areaOfCircle();
+        float circumferenceOfCircle();
+
+    private:
+        float mRadiusCir, mAreaCir, mCircumferenceCir;
 };
 
