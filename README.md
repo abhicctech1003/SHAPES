@@ -1,5 +1,6 @@
 # Console Shape Application Project
-This C++ project is designed to handle geometric shapes, including Rectangle, Triangle, and Circle. The project follows a modular structure with separate header (.h) and implementation (.cpp) files for each class.
+This C++ project is designed to get geometrical properties of shapes. The project follows a modular structure with separate header (.h) and implementation (.cpp) files for each class.
+
 ## Folder Structure
 The project is organized into the following folders:
 
@@ -8,6 +9,7 @@ The project is organized into the following folders:
 - **src**: Contains implementation files corresponding to each header file.
  
 - **main.cpp**: Main source file where the program execution starts.
+
 ## 1. Line
  
 - Header: include/Line.h
