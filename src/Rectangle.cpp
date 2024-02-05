@@ -1,9 +1,16 @@
 #include "../headers/Rectangle.h"
 using namespace std;
 
-Rectangle::Rectangle() : mAreaRec(0), mPerimeterRec(0){}
+Rectangle::Rectangle() :
+mAreaRec(0), mPerimeterRec(0)
+{
+    
+}
 
-Rectangle::~Rectangle() {}
+Rectangle::~Rectangle() 
+{
+    
+}
 
 void Rectangle::dimensionOfRectangle(int len, int wid)
 {
@@ -11,8 +18,8 @@ void Rectangle::dimensionOfRectangle(int len, int wid)
     this->mLengthRec = len;
     this->mBreadthRec = wid;
 
-    mAreaRec = mLengthRec * mBreadthRec;
-    mPerimeterRec = 2 * (mLengthRec + mBreadthRec);
+    mAreaRec = mLengthRec * mBreadthRec; // Formula for area of rectangle
+    mPerimeterRec = 2 * (mLengthRec + mBreadthRec); // Formula for perimeter of rectangle
 }
 
  int Rectangle::areaOfRectangle()

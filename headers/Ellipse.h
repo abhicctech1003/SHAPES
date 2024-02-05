@@ -1,4 +1,3 @@
-
 #include <iostream>
 
 class Ellipse
@@ -6,12 +5,17 @@ class Ellipse
     public:
         Ellipse(); // Constructor
         ~Ellipse(); // Destructor
+        
         void dimensionEllipse(float majorAx, float minorAX);
         float areaOfEllipse();
         float circumferenceOfEllipse();
 
     private:
-        float mMajorAxisEll, mMinorAxisEll, mAreaEll, mCircumferenceEll;
+        // Member variable
+        float mMajorAxisEll;
+        float mMinorAxisEll;
+        float mAreaEll;
+        float mCircumferenceEll;
 };
 
 

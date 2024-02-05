@@ -3,8 +3,9 @@
 class Circle
 {
     public:
-        Circle();
-        ~Circle();
+        Circle(); // Constructor
+        ~Circle(); // Destructor
+        
         void dimensionCircle(float rad);
         float areaOfCircle();
         float circumferenceOfCircle();

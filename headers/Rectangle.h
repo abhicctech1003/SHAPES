@@ -1,4 +1,3 @@
-
 #include <iostream>
 
 class Rectangle
@@ -6,11 +5,16 @@ class Rectangle
     public:
         Rectangle(); // Constructor
         ~Rectangle(); // Destructor
+
         void dimensionOfRectangle(int len, int wid);
         int areaOfRectangle();
         int perimeterOfRectangle();
 
     private:
-        int mLengthRec, mBreadthRec, mAreaRec, mPerimeterRec;
+        // Member variables
+        int mLengthRec;
+        int mBreadthRec;
+        int mAreaRec;
+        int mPerimeterRec;
 };
 

@@ -1,9 +1,16 @@
 #include "../headers/Triangle.h"
 using namespace std;
 
-Triangle::Triangle() : mAreaTri(0.0f), mPerimeterTri(0){}
+Triangle::Triangle() : 
+mAreaTri(0.0f), mPerimeterTri(0)
+{
 
-Triangle::~Triangle() {}
+}
+
+Triangle::~Triangle() 
+{
+    
+}
 
 void Triangle::dimensionTriangle(double s1, double s2, double s3, double ht)
 {
@@ -13,8 +20,8 @@ void Triangle::dimensionTriangle(double s1, double s2, double s3, double ht)
     this->mBaseTri = s3;
     this->mHeightTri = ht;
 
-    mAreaTri = (float)((0.5) * mBaseTri * mHeightTri);
-    mPerimeterTri = mSideOneTri + mSideTwoTri + mBaseTri;
+    mAreaTri = (float)((0.5) * mBaseTri * mHeightTri); // Formula for area of triangle
+    mPerimeterTri = mSideOneTri + mSideTwoTri + mBaseTri; // Formula for perimeter of triangle
 }
 
  double Triangle::areaOfTriangle()
