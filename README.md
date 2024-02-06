@@ -1,6 +1,22 @@
 # Console Shape Application Project
 This C++ project is designed to get geometrical properties of shapes. The project follows a modular structure with separate header (.h) and implementation (.cpp) files for each class.
 
+## Getting Started
+
+1. **Clone the Repository:**
+
+    ```bash
+    git clone https://github.com/abhicctech1003/SHAPES.git
+    ```
+
+2. **Build the Project:**
+
+    Open the project in your preferred C++ IDE or build using the command line.
+
+3. **Run the Application:**
+
+    Execute the built binary to run the application.
+
 ## Folder Structure
 The project is organized into the following folders:
 
